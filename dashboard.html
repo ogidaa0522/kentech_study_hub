@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard · KENTECH Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">📚 Study Hub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" title="Toggle dark mode">🌙</button>
+    <button class="nav-hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <main class="page-main">
+    <div class="page-header">
+      <h1>Progress Dashboard</h1>
+      <p>A bird's-eye view of your academic progress.</p>
+    </div>
+
+    <!-- STAT CARDS -->
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-number" id="statTotal">0</div>
+        <div class="stat-label">Total Tasks</div>
+      </div>
+      <div class="stat-card stat-green">
+        <div class="stat-number" id="statDone">0</div>
+        <div class="stat-label">Completed</div>
+      </div>
+      <div class="stat-card stat-yellow">
+        <div class="stat-number" id="statActive">0</div>
+        <div class="stat-label">In Progress</div>
+      </div>
+      <div class="stat-card stat-red">
+        <div class="stat-number" id="statOverdue">0</div>
+        <div class="stat-label">Overdue</div>
+      </div>
+    </div>
+
+    <!-- OVERALL PROGRESS -->
+    <div class="dashboard-card">
+      <h2>Overall Completion</h2>
+      <div class="big-progress-wrap">
+        <div class="big-progress-track">
+          <div class="big-progress-fill" id="overallFill" style="width:0%"></div>
+        </div>
+        <span class="big-progress-pct" id="overallPct">0%</span>
+      </div>
+    </div>
+
+    <!-- BY SUBJECT -->
+    <div class="dashboard-card">
+      <h2>Progress by Subject</h2>
+      <div id="subjectBreakdown" class="subject-breakdown">
+        <p class="empty-hint">No tasks yet — head to the Planner to add some!</p>
+      </div>
+    </div>
+
+    <!-- HIGH PRIORITY & UPCOMING -->
+    <div class="dashboard-two-col">
+      <div class="dashboard-card">
+        <h2>🔴 High Priority</h2>
+        <ul class="dash-task-list" id="highPriorityList">
+          <li class="empty-hint">None yet.</li>
+        </ul>
+      </div>
+      <div class="dashboard-card">
+        <h2>📅 Due Soon</h2>
+        <ul class="dash-task-list" id="dueSoonList">
+          <li class="empty-hint">No upcoming tasks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RESET -->
+    <div style="text-align:center; margin-top: 2rem;">
+      <button class="btn btn-ghost btn-danger" id="clearAllBtn">Clear All Tasks</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>KENTECH Study Hub &copy; 2026 · Built for KENTECH students</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

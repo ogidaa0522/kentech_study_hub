@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About · KENTECH Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">📚 Study Hub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" title="Toggle dark mode">🌙</button>
+    <button class="nav-hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <main class="page-main page-main--narrow">
+
+    <div class="page-header">
+      <h1>About This Project</h1>
+      <p>KENTECH Study Hub — Introduction to AI Programming, Spring 2026</p>
+    </div>
+
+    <div class="about-card">
+      <h2>What is KENTECH Study Hub?</h2>
+      <p>
+        KENTECH Study Hub is a web-based study management platform designed for students
+        at Korea Institute of Energy Technology. It lets you track tasks, monitor your
+        academic progress, and stay motivated throughout the semester — all without needing
+        an account or a backend server.
+      </p>
+      <p>
+        Everything is saved locally in your browser, so your data stays private and the
+        site loads instantly.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h2>Core Features</h2>
+      <ul class="about-list">
+        <li>✅ Add, edit, and delete study tasks</li>
+        <li>📊 Real-time progress bar per subject and overall</li>
+        <li>🗂️ Subject categories (Math, Physics, CS, …)</li>
+        <li>📅 Due dates with overdue detection</li>
+        <li>🔴 Priority levels (High / Medium / Low)</li>
+        <li>🌙 Dark mode toggle</li>
+        <li>💬 Daily motivational quotes</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h2>Tech Stack</h2>
+      <div class="tech-chips">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">Vanilla JavaScript</span>
+        <span class="chip">localStorage API</span>
+        <span class="chip">Google Fonts</span>
+        <span class="chip">Vercel</span>
+      </div>
+    </div>
+
+    <div class="about-card">
+      <h2>AI Development Report</h2>
+      <p>This project was built with AI assistance as part of the Assignment 4 requirement.</p>
+
+      <h3 class="report-sub">Tools Used</h3>
+      <ul class="about-list">
+        <li>Claude (Anthropic) — primary coding assistant</li>
+        <li>GitHub Copilot — in-editor autocomplete</li>
+      </ul>
+
+      <h3 class="report-sub">Tasks AI Helped With</h3>
+      <ul class="about-list">
+        <li>HTML structure and page layout</li>
+        <li>CSS design system and dark mode implementation</li>
+        <li>JavaScript task CRUD and localStorage persistence</li>
+        <li>Progress calculation and subject breakdown logic</li>
+      </ul>
+
+      <h3 class="report-sub">Representative Prompts</h3>
+      <ol class="about-list about-list--ol">
+        <li>"Build a responsive navbar with dark mode toggle for a study management site."</li>
+        <li>"Write vanilla JS to save and load tasks from localStorage and render them as list items."</li>
+        <li>"Create a progress dashboard that groups tasks by subject and shows a completion bar for each."</li>
+      </ol>
+
+      <h3 class="report-sub">What I Modified</h3>
+      <ul class="about-list">
+        <li>Adjusted color palette to KENTECH blue identity</li>
+        <li>Added priority filtering and overdue detection logic</li>
+        <li>Rewrote the hero section copy for better student voice</li>
+        <li>Fixed a bug where deleting a task didn't update the progress bar</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h2>Contact</h2>
+      <p>Course: Introduction to AI Programming · KENTECH · Spring 2026</p>
+      <p>Assignment 4 submission</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>KENTECH Study Hub &copy; 2026 · Built for KENTECH students</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
